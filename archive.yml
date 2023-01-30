@@ -1,0 +1,9 @@
+---
+- name: example of archive 
+  hosts: 13.229.201.106
+  tasks:
+  - name: archive the files and folders 
+    archive: 
+     path: /archive/project/*
+     dest: /archive/project.zip
+     formate: zip
